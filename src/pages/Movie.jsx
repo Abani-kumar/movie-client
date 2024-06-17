@@ -10,7 +10,7 @@ const Movie = () => {
     (async () => {
       try {
         let response = await fetch(
-          `https://movie-server-jccp.onrender.com/api/getMoviesById/${id}`
+          `http://localhost:5000/api/getMoviesById/${id}`
         );
         let result = await response.json();
         setMovie(result?.data);

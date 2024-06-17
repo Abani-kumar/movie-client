@@ -7,7 +7,7 @@ const Home = () => {
     (async () => {
       try {
         let response = await fetch(
-          "https://movie-server-jccp.onrender.com/api/getAllMovies"
+          "http://localhost:5000/api/getAllMovies"
         );
         let result = await response.json();
         setMovies(result?.data);
